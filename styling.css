@@ -1,4 +1,17 @@
 h2 {
+    width: auto;
+    display: block;
+    height: auto;
+    margin: 1%;
+    font-variant: small-caps;
+    font-family: Georgia, 'Times New Roman', Times, serif, 'Times New Roman', Times, serif;
+    text-align: left;
+    color: plum;
+    background-color: orangered;
+    text-shadow: 0cap;
+}
+
+h2 {
     font-variant: small-caps;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: left;
@@ -16,7 +29,7 @@ background-color: aquamarine;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 4px;
     border: 2px;
-    border-radius: 150%;
+    border-radius: 5px;
     margin: auto;
     align-items: center;
     margin-bottom: 4%;
@@ -24,11 +37,11 @@ background-color: aquamarine;
     transition-property: width, height, border-radius, color, background-color, transform, opacity, box-shadow, font-family;
     transition-duration: 0.6s;
     transition-timing-function: ease-in-out;
-    opacity: 0.8;
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 4px 3px 2px 1px #d39e93;
+    box-shadow: 7px 7px 3px 1px #d39e93;
 }
 
 p.name:hover {
@@ -39,14 +52,84 @@ p.name:hover {
     text-align: center;
     width: 200px;
     height: 67px;
-    border: 2px;
-    border-radius: 5px;
+    border-radius: 37%;
     transform: rotate(360deg);
-    opacity: 1;
+    opacity: 0.8;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: -6px 6px 2px -1px #d39e93;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     transition-duration: .5s;
+}
+.headline {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    color: chocolate;
+    background-color: aqua;
+    background-position: 0%;
+    margin: 3px auto; /* Center horizontally and apply vertical margin */
+    border: 2px solid chocolate;
+    padding: 4px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.headline::selection {
+    color: blueviolet;
+    background-color: skyblue;
+ 
+}
+    .short-bio {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightcoral;
+}
+
+.short-bio::selection{
+    color: black;
+    background-color: greenyellow;
+}
+
+.button-for-video {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.button {
+    color: orangered;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.z {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.z span {
+    text-decoration: none;
+    border: 4px solid plum;
+    border-radius: 5px;
+    background-color: white;
+    color: black; /* Replace "blank" with the desired text color */
+    padding: 3px;
+    display: inline-block;
+}
+.z span:hover {
+    color: coral;
 }
