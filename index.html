@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <link rel="icon" type="image/png" href="1684539053175.jpeg">
+  <link rel="stylesheet" type="text/css" href="styling.css">
   <title>Joy's Website</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body bgcolor="9df9ef">
+<body>
   <h2>
     <em>
-      <p align="center">Howdy &#x1F920; Guys, what's good !:)	welcome to my website</p>
+      <p class="headline">Howdy &#x1F920; Guys, what's good !:)	welcome to my website</p>
     </em>
   </h2>
   <figure>
@@ -18,7 +18,7 @@
   <b>
     <p class="name">Joy Deep Saha</p>
   </b>
-  <h5 align="center">Hi, my name is Joy Deep Saha and I am a student at BITS Pilani, pursuing my undergraduate degree in computer science.</h5>
+  <h5 class="short-bio">Hi, my name is Joy Deep Saha and I am a student at BITS Pilani, pursuing my undergraduate degree in computer science.</h5>
   <hr style="color: coral; border-style: solid; border-width: 3px; margin-left: 23%; margin-right: 23%; margin-top: -1%; border-radius: 10px;">
   <h3>
     <em>
@@ -36,32 +36,28 @@
 
   <video id="mainVideo" src="y2mate.com - I don't remember her name..._tAcIhVViFoY_1080p.mp4" width="50%" height="5%" controls loop style="display: block; margin: 0 auto;"></video>
 
-  <button onclick="promptUser()">Do you want to see something Calming?</button>
-
+  <span class="button-for-video">
+    <button class="button" onclick="promptUser()">Do you want to see something Calming?</button>
+  </span>
+    
   <script>
     function promptUser() {
-      var response = confirm("Enjoy Some Relaxing Anime :)");
+      var response = confirm("Just Enjoy the small moments with your loved ones :)");
       if (response) {
         var video = document.getElementById("mainVideo");
-        var newSource = "peacefulanime.mp4";
+        var newSource = "relaxing.mp4";
         video.src = newSource;
         video.load();
         video.play();
       }
     }
   </script>
-<div style="display: flex; align-items: center;">
-  <img src="ezgif.com-gif-to-mp4.gif" width="3%" height="3%" style="margin-right: 10px;">
-  <em><b>Contact me</b></em>
-</div>
-
   <b>
-    <a href="https://www.linkedin.com/in/joy-deep-saha/" target="_blank">
       <img src="linkedin-icon-2048x2048-ya5g47j2.png" width="3%" height="3%" alt="LinkedIn" style="display: block; margin: 0 auto;">
     </a>
   </b>
-
-  <p style="text-align: center;"><b>Let's Connect on LinkedIn &#128516</b></p>
+  <a href="https://www.linkedin.com/in/joy-deep-saha/" target="_blank">
+  <p class="z"><span>Let's Connect on LinkedIn &#128516</span></p>
 
   <b>
     <a href="mailto:sahajoydeep2002@gmail.com" target="_blank">
